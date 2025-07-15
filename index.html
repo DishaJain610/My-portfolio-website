@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"  rel="stylesheet"  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="main">
+    
+    <div class="page1">
+      <nav>
+        <img src="myphoto.png" class="logo">
+        <button id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Achievements</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    <div class="header-text">
+      <div class="text">
+        <h2>Web Designer</h2>
+        <h1>Hi, I'm <span>Disha Jain</span></h1>
+       <p> I'm a BCA student and a passionate <br>  <b id="typed">Frontend Developer.</b></p>  
+      </div> 
+        <div class="img">
+          <img src="myphoto.png">
+        </div>
+       
+      </div> 
+    </div>
+    </div>
+  </div>
+ 
+<div id="about">
+  <div id="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="myphoto2.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="subtitle"> About Me</h1>
+        <p>My name is Disha Jain, a dedicated BCA student specializing in Web Development. With a strong passion for technology and creativity, I strive to build dynamic, responsive websites and continuously enhance my skills to become a top-tier web developer.</p>
+        <div class="tab-section">
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+            <p class="tab-links" onclick="opentab('education', event)">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web Interface</li>
+              <li><span>Web Development</span><br>Web/App Development</li>
+              <li><span>Databases</span><br>SQL Queries</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Summer Intern</span><br>Ingenx Technologies</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>BCA</span><br>MRIIRS</li>
+              <li><span>12th</span><br>SMCS</li>
+              <li><span>10th</span><br>SMCS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="service">
+  <h1>My Services</h1>
+  <div class="cards">
+    <div class="card">
+      <i class="ri-code-s-slash-line"></i>
+      <h3>Web Design</h3>
+      <p>I can make impressive and responsive websites using languages like html, css and javascript.</p>
+      <a href="#">learn more</a>
+    </div>
+    <div class="card">
+      <i class="ri-artboard-fill"></i>
+      <h3>UI/UX Design</h3>
+      <p>I can design stylish websited using Figma.</p>
+      <a href="#">learn more</a>
+    </div>
+    </div>
+  </div>
+</div>
+<div id="projects">
+  <div class="container">
+    <h1 class="sub-title">Projects</h1>
+    <div class="project-list">
+      <div class="project-card">
+        <h2>Website Prime Health Hub</h2>
+        <p>This is a website which is made using HTML and CSS. It can take you to google.com directly from the web page.</p>
+        <a href="https://github.com/DishaJain610/website-prime-health-hub" target="_blank" class="project-link">View Project</a>
+      </div>
+      <div class="project-card">
+        <h2>Tic-Tac-Toe Game</h2>
+        <p>This is a website which is made using HTML, CSS, and JavaScript. It is a game which can be refreshed and displays the winner as well.</p>
+        <a href="https://github.com/DishaJain610/Tic-Tac-Toe" target="_blank" class="project-link">View Project</a>
+      </div>
+      <div class="project-card">
+        <h2>The Portfolio Website</h2>
+        <p>This is a website which is made using HTML, CSS, and JavaScript. It is a detailed description of my entire career till now.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="connect">
+  <div class="left">
+    <h2>Contact me</h2>
+    <div class="mail"><i class="ri-mail-ai-fill"></i>
+      <a href="mailto:" id="email-link">jjkdjd</a>
+    </div>
+    <div class="ph"><i class="ri-phone-fill"></i>
+      <a href="tel:+91" id="phone-link">+91XXXXXXXX</a>
+    </div>
+    <div class="logo">
+      <a href="https://www.instagram.com/dishajain4815/?hl=en" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+      <a href="https://www.linkedin.com/in/disha-jain-169a99320/" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+    </div>
+    <a href="Disha jain resume.docx"><button type="button">Download CV</button></a>
+  </div>
+  <div class="right">
+    <input type="text" name="name" id="contact-name" placeholder="Your Name">
+    <input type="email" name="email" id="contact-email" placeholder="Your Email">
+    <textarea name="message" id="contact-message" placeholder="Your Message" rows="4"></textarea>
+    <button type="button">Submit Now</button>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
